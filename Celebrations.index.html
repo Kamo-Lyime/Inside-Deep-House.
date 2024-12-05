@@ -49,42 +49,94 @@
         <div class="container-lg">
             <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
                 <div class="col">
-                    <img data-src="Images/celebrations/vinny nynal.jpg" class="gallery-item" alt="Gallery1">
+                    <img src="Images/celebrations/vinny nynal.jpg" class="gallery-item fullscreen-trigger" alt="Gallery1">
                 </div>
                 <div class="col">
-                  <img src="Images/Spring fiesta.jpg" class="gallery-item" alt="Gallery2">
+                  <img src="Images/Spring fiesta.jpg" class="gallery-item fullscreen-trigger" alt="Gallery2">
               </div>
               <div class="col">
-                <img src="Images/celebrations/dss last dance.webp" class="gallery-item" alt="Gallery3">
+                <img src="Images/celebrations/dss last dance.webp" class="gallery-item fullscreen-trigger" alt="Gallery3">
             </div>
             <div class="col">
-              <img src="Images/celebrations/Soulful-Socials-7-Sept.jpeg" class="gallery-item" alt="Gallery4">
+              <img src="Images/celebrations/Soulful-Socials-7-Sept.jpeg" class="gallery-item fullscreen-trigger" alt="Gallery4">
           </div>
           <div class="col">
-            <img src="Images/celebrations/Keepers-Of-The-Groove-Experience-2025-1-1536x865.jpg" class="gallery-item" alt="Gallery5">
+            <img src="Images/celebrations/Keepers-Of-The-Groove-Experience-2025-1-1536x865.jpg" class="gallery-item fullscreen-trigger" alt="Gallery5">
         </div>
         <div class="col">
-          <img src="Images/celebrations/time4house.jpg" class="gallery-item" alt="Gallery6">
+          <img src="Images/celebrations/time4house.jpg" class="gallery-item fullscreen-trigger" alt="Gallery6">
       </div>
       <div class="col">
-        <img src="Images/celebrations/world without end.jpg" class="gallery-item" alt="Gallery7">
+        <img src="Images/celebrations/world without end.jpg" class="gallery-item fullscreen-trigger" alt="Gallery7">
     </div>
 
     <div class="col">
-      <img src="Images/celebrations/24hr house party.jpg" class="gallery-item" alt="Gallery8">
+      <img src="Images/celebrations/24hr house party.jpg" class="gallery-item fullscreen-trigger" alt="Gallery8">
   </div>
   <div class="col">
-    <img src="Images/celebrations/world without end dec.jpg" class="gallery-item" alt="Gallery9">
+    <img src="Images/celebrations/world without end dec.jpg" class="gallery-item fullscreen-trigger" alt="Gallery9">
 </div>
 <div class="col">
-  <img src="Images/celebrations/blaccart.jpg" class="gallery-item" alt="Gallery10">
+  <img src="Images/celebrations/blaccart.jpg" class="gallery-item fullscreen-trigger" alt="Gallery10">
 </div>
 <div class="col">
-  <img src="Images/celebrations/jamie lesotho.jpg" class="gallery-item" alt="Gallery11">
+  <img src="Images/celebrations/jamie lesotho.jpg" class="gallery-item fullscreen-trigger" alt="Gallery11">
 </div>
 <div class="col">
-  <img src="Images/celebrations/passion people end.jpg" class="gallery-item" alt="Gallery12">
+  <img src="Images/celebrations/passion people end.jpg" class="gallery-item fullscreen-trigger" alt="Gallery12">
+</div> 
+<div class="col">
+  <img src="Images/celebrations/babel.jpg" class="gallery-item fullscreen-trigger" alt="Gallery13">
 </div>
+<div class="col">
+<img src="Images/celebrations/beehive.jpg" class="gallery-item fullscreen-trigger" alt="Gallery14">
+</div>
+<div class="col">
+<img src="Images/celebrations/crazy g.jpg" class="gallery-item fullscreen-trigger" alt="Gallery15">
+</div>
+<div class="col">
+<img src="Images/celebrations/deepsoul sensation miggs.jpg" class="gallery-item fullscreen-trigger" alt="Gallery16">
+</div>
+<div class="col">
+<img src="Images/celebrations/deepsoul.jpg" class="gallery-item fullscreen-trigger" alt="Gallery17">
+</div>
+<div class="col">
+<img src="Images/celebrations/malankane birthday marathon.jpg" class="gallery-item fullscreen-trigger" alt="Gallery18">
+</div>
+<div class="col">
+<img src="Images/celebrations/malankanes birthday.jpg" class="gallery-item fullscreen-trigger" alt="Gallery19">
+</div>
+<div class="col">
+<img src="Images/celebrations/kerri chandler.jpg" class="gallery-item fullscreen-trigger" alt="Gallery20">
+</div>
+<div class="col">
+<img src="Images/celebrations/kez ym.jpg" class="gallery-item fullscreen-trigger" alt="Gallery21">
+</div>
+<div class="col">
+<img src="Images/celebrations/lars b in sa.png" class="gallery-item fullscreen-trigger" alt="Gallery22">
+</div>
+<div class="col">
+<img src="Images/celebrations/osunlade 31st.jpg" class="gallery-item fullscreen-trigger" alt="Gallery23">
+</div>
+<div class="col">
+<img src="Images/celebrations/osunlade event.jpg" class="gallery-item fullscreen-trigger" alt="Gallery24">
+</div>
+<div class="col">
+  <img src="Images/celebrations/profound atjazz.jpg" class="gallery-item fullscreen-trigger" alt="Gallery25">
+  </div>
+  <div class="col">
+  <img src="Images/celebrations/r55 chillout atjazz.jpg" class="gallery-item fullscreen-trigger" alt="Gallery26">
+  </div>
+  <div class="col">
+  <img src="Images/celebrations/qb smith - otto b.jpg" class="gallery-item fullscreen-trigger" alt="Gallery27">
+  </div>
+  <div class="col">
+  <img src="Images/celebrations/the deep tequila gang rustenburg.jpg" class="gallery-item fullscreen-trigger" alt="Gallery28">
+  </div>
+  <div class="col">
+  <img src="Images/celebrations/24hr house party line up.jpg" class="gallery-item fullscreen-trigger" alt="Gallery29">
+  </div>
+         
             </div>
         </div>
   <!-- Modal -->
@@ -97,16 +149,34 @@
         </div>
       </div>
     </div>
-
-    <script type="text/javascript">
-      document.addEventListener("click", function(e) {
-          if (e.target.classList.contains("gallery-item")) {
-              const src = e.target.getAttribute("data-src");
-              document.querySelector(".modal-img").src = src;
-              const myModal = new bootstrap.Modal(document.getElementById('gallery-popup'));
-              myModal.show();
-          }
+<!--Bootstrap 5 js-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script>
+  document.querySelectorAll('.fullscreen-trigger').forEach(function(img) {
+    img.addEventListener('click', function() {
+      // Create a fullscreen container
+      var fullscreenContainer = document.createElement('div');
+      fullscreenContainer.classList.add('fullscreen');
+  
+      // Clone the image and add it to the fullscreen container
+      var imgClone = this.cloneNode();
+      fullscreenContainer.appendChild(imgClone);
+  
+      // Create an exit icon and add it to the fullscreen container
+      var exitIcon = document.createElement('span');
+      exitIcon.innerHTML = '&times;';
+      exitIcon.classList.add('exit-icon');
+      fullscreenContainer.appendChild(exitIcon);
+  
+      // Add the fullscreen container to the body
+      document.body.appendChild(fullscreenContainer);
+  
+      // Add click event to remove fullscreen view
+      exitIcon.addEventListener('click', function() {
+        document.body.removeChild(fullscreenContainer);
       });
+    });
+  });
   </script>
 </body>
 </html>

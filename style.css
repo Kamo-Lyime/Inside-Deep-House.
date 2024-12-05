@@ -270,3 +270,127 @@ h5{
 #comments-list .comment p {
   margin: 0;
 }
+.audio-player {
+  width: 100%;
+  max-width: 600px;
+  height: 50px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 197, 8, 0.1);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.audio-player::-webkit-media-controls-panel {
+  background-color: #ffc31e;
+  border-radius: 10px;
+}
+
+.audio-player::-webkit-media-controls-play-button,
+.audio-player::-webkit-media-controls-current-time-display,
+.audio-player::-webkit-media-controls-time-remaining-display,
+.audio-player::-webkit-media-controls-timeline,
+.audio-player::-webkit-media-controls-volume-slider {
+  filter: invert(100%);
+}
+
+/* Remove the display: none; property to show these elements */
+/* Removed empty ruleset for .audio-player::-webkit-media-controls-mute-button and .audio-player::-webkit-media-controls-fullscreen-button */
+
+.black-text {
+  color: black;
+}
+.enhanced-title {
+  color: #ff6600; /* Orange color */
+  font-size: 1.0em;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+.enhanced-img {
+  border: 2px solid #ff6600; /* Orange border */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.enhanced-text {
+  color: #333;
+  font-size: 1.0em;
+  background-color: #fff3e0; /* Light orange background */
+  padding: 10px;
+  border-left: 5px solid #ff6600; /* Orange border on the left */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.enhanced-text i {
+  color: #ff6600; /* Orange color for icons */
+}
+
+.enhanced-price {
+  background-color: #312f2d; /* Light orange background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.price-tag {
+  color: #ff6600; /* Orange color */
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.contact-button {
+  background-color: #ff6600; /* Orange background */
+  border: none;
+  color: white;
+  font-size: 1.0em;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #e65c00; /* Darker orange on hover */
+}
+
+.contact-button i {
+  margin-right: 100px;
+}
+/* Fullscreen image styling */
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.fullscreen img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Exit icon styling */
+.exit-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+}
